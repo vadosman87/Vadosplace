@@ -14,22 +14,22 @@
 
         <!-- header -->
         <header class="header">
-            <div class="container header__container">
-                <img src="./img/logo.png" class="logo" alt="Коворкинг твоей мечты">
-                    <div class="contacts">
-                        <a href="tel:+78000039210" class="contacts__phone">8(800) 00-392-10</a>
-                        <div class="contacts__time">График работы</div>
-                    </div>
+            <div class="container container--flex">
+                <a class="logo">
+                    <img src="../img/logo.png" class="logo__img" alt="Коворкинг твоей мечты">
+                </a>
+                <div class="contacts">
+                    <a href="tel:+78000039210" class="contacts__phone">8(800) 00-392-10</a>
+                    <div class="contacts__time">График работы</div>
+                </div>
             </div>
         </header>
         <!--banner-->
-        <div class="container">
-            <div class="about">
-                <img src="./img/about.jpg" alt="Эбаут">
-            </div>
+        <div class="about">
+            <img src="/img/about.jpg" alt="Эбаут">
         </div>
         <!--Main-->
-        <div class="container">
+        <div class="container container--flex">
             <aside class="sidebar">
                 <nav class="menu">
                     <ul class="menu__list">
@@ -65,48 +65,60 @@
                     <h1 class="title">
                         Особенности
                     </h1>
-                    <ul class="content__box-wrap">
+                    <ul class="content__box--wrap">
                         <li class="content__box">
-                            <div class="content__icon content__icon--flower"></div>
+                            <div class="content__icon">
+                                <img src="img/flower.png" alt="премиум-класс">
+                            </div>
                             <h3 class="content__title">
                                 уникальность
                             </h3>
-                            <p class="conetnt__text">
-                                Создан для вашего комфортного отдыха
-                            </p>
-                            <ul class="content_list">
-                                <li class="content__item">Кофе/чай</li>
-                                <li class="content__item">Шкаф</li>
-                                <li class="content__item">КофЕ/ЧАЙ</li>
-                            </ul>
+                            <div class="content__paragraph">
+                                <p class="conetnt__text">
+                                    Создан для вашего комфортного отдыха
+                                </p>
+                                <ul class="content_list">
+                                    <li class="content__item">Кофе/чай</li>
+                                    <li class="content__item">Шкаф</li>
+                                    <li class="content__item">КофЕ/ЧАЙ</li>
+                                </ul>
+                            </div>
                         </li>
                         <li class="content__box">
-                            <div class="content__icon content__icon--star"></div>
+                            <div class="content__icon">
+                                <img src="img/star.png" alt="премиум-класс">
+                            </div>
                             <h3 class="content__title">
                                 премиум-класс
                             </h3>
-                            <p class="conetnt__text">
-                                Для любителей хороших впечатлений
-                            </p>
-                            <ul class="content__list">
-                                <li class="content__item">Обед+кофе</li>
-                                <li class="content__item">Шкаф (10 кг)</li>
-                                <li class="content__item">Детское кресло</li>
-                            </ul>
+                            <div class="content__paragraph">
+                                <p class="conetnt__text">
+                                    Для любителей хороших впечатлений
+                                </p>
+                                <ul class="content__list">
+                                    <li class="content__item">Обед+кофе</li>
+                                    <li class="content__item">Шкаф (10 кг)</li>
+                                    <li class="content__item">Детское кресло</li>
+                                </ul>
+                            </div>
                         </li>
                         <li class="content__box">
-                            <div class="content__icon content__icon--paintbrush"></div>
+                            <div class="content__icon">
+                                <img src="img/palitra.png" alt="премиум-класс">
+                            </div>
                             <h3 class="content__title">
                                 лакшери-стулья
                             </h3>
-                            <p class="conetnt__text">
-                                Всё самое лучшее и незабываемое
-                            </p>
-                            <ul class="content__list">
-                                <li class="content__item">Джакузи</li>
-                                <li class="content__item">Шкаф</li>
-                                <li class="content__item">Табуретка</li>
-                            </ul>
+                            <div class="content__paragraph">
+                                <p class="conetnt__text">
+                                    Всё самое лучшее и незабываемое
+                                </p>
+                                <ul class="content__list">
+                                    <li class="content__item">Джакузи</li>
+                                    <li class="content__item">Шкаф</li>
+                                    <li class="content__item">Табуретка</li>
+                                </ul>
+                            </div>
                         </li>
                     </ul>
                 </section>
@@ -190,7 +202,7 @@
         </div>
         <!--footer-->
         <footer class="footer">
-            <div class="container">
+            <div class="container container--flex">
                 <div class="footer__copyright">
                     <p>
                         Сделано с любовью и старанием на курсе «HTML + CSS» в
@@ -199,30 +211,28 @@
                         <p class="footer__copyright-author">Сибагатуллин Вадим</p>
                     </p>
                 </div>
-                <div class="logo logo--footer">
-                    <a href="main.html" class="logo-link">
-                        <img src="./img/logo.png" class="logo__footer" alt="Коворкинг твоей мечты">
-                    </a>
-                </div>
+                <a class="logo">
+                    <img src="../img/logo.png" class="logo__img" alt="Коворкинг твоей мечты">
+                </a>
                 <div class="social">
                     <h4 class="social__title">
                         Наши социальные сети
                     </h4>
                     <ul class="social__list">
                         <li class="social__icon social__icon--vk">
-                            <a class="social-link" href="//vk.com" target="_blank">Vkontakte</a>
+                            <a class="social__link" href="//vk.com" target="_blank">Vkontakte</a>
                         </li>
                         <li class="social__icon social__icon--fb">
-                            <a class="social-link" href="//facebook.com" target="_blank">Facebook</a>
+                            <a class="social__link" href="//facebook.com" target="_blank">Facebook</a>
                         </li>
                         <li class="social__icon social__icon--google">
-                            <a class="social-link" href="//plus.google.com/" target="_blank">Google+</a>
+                            <a class="social__link" href="//plus.google.com/" target="_blank">Google+</a>
                         </li>
                         <li class="social__icon social__icon--twitter">
-                            <a class="social-link" href="//twitter.com" target="_blank">Twitter</a>
+                            <a class="social__link" href="//twitter.com" target="_blank">Twitter</a>
                         </li>
                         <li class="social__icon social__icon--mail">
-                            <a class="social-link" href="mailto:info@coworking.ru">Mail</a>
+                            <a class="social__link" href="mailto:info@coworking.ru">Mail</a>
                         </li>
                     </ul>
                 </div>
