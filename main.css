@@ -167,6 +167,7 @@ ul > li {
     background: no-repeat center center;
     margin-right: 20px;
     transition: .5s;
+    margin-top: -2px;
 }
 
 .menu__text:hover {
