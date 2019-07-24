@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,700&display=swap&subset=cyrillic-ext"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:700&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="./main.css">
 </head>
 
@@ -14,12 +17,12 @@
 
         <!-- header -->
         <header class="header">
-            <div class="container container--flex">
+            <div class="container">
                 <a class="logo">
                     <img src="../img/logo.png" class="logo__img" alt="Коворкинг твоей мечты">
                 </a>
                 <div class="contacts">
-                    <a href="tel:+78000039210" class="contacts__phone">8(800) 00-392-10</a>
+                    <a href="tel:+78000039210" class="contacts__phone">8 (800) 00-392-10</a>
                     <div class="contacts__time">График работы</div>
                 </div>
             </div>
@@ -29,20 +32,20 @@
             <img src="../img/about.jpg" alt="Эбаут">
         </div>
         <!--Main-->
-        <div class="container container--flex">
+        <div class="container">
             <aside class="sidebar">
                 <nav class="menu">
                     <ul class="menu__list">
-                        <li class="menu__item menu__item-active">
+                        <li class="menu__item menu__item--active">
                             <a class="menu__link">
                                 <span class="menu__icon menu__icon--main"></span>
-                                <span class="menu__title">
+                                <span class="menu__title menu__title--active">
                                     Главная
                                 </span>
                             </a>
                         </li>
                         <li class="menu__item">
-                            <a href="reviews.html" class="menu__link">
+                            <a href="#" class="menu__link">
                                 <span class="menu__icon menu__icon--feed"></span>
                                 <span class="menu__title">
                                     Отзывы
@@ -50,7 +53,7 @@
                             </a>
                         </li>
                         <li class="menu__item">
-                            <a href="prices.html" class="menu__link">
+                            <a href="#" class="menu__link">
                                 <span class="menu__icon menu__icon--wallet"></span>
                                 <span class="menu__title">
                                     Тарифы
@@ -123,9 +126,9 @@
                     </ul>
                 </section>
                 <section class="news">
-                    <h2 class="title">
+                    <h1 class="title">
                         Последние новости
-                    </h2>
+                    </h1>
                     <ul class="news__list">
                         <li class="news__item">
                             <div class="news__img">
@@ -180,7 +183,7 @@
                             <div class="pagination__page">
                                 Страница 1 из 7
                             </div>
-                            <a class="pagination__control pagination__control--left"></a>
+                            <a class="pagination__control pagination__control--left" href="#"></a>
                             <ul class="pagination__list">
                                 <li class="pagination__item pagination__item--active">
                                     <a class="pagination__link">1</a>
@@ -212,38 +215,41 @@
         </div>
         <!--footer-->
         <footer class="footer">
-            <div class="container container--flex">
-                <div class="footer__copyright">
-                    <p> Сделано с любовью и старанием на курсе «HTML + CSS» в
-                        <a class="footer__copyright--link" href="//loftschool.ru" target="_blank">LoftSchool</a>.
-                        <div>Автор работы:</div>
-                        <p class="footer__copyright--author">Сибагатуллин Вадим</p>
-                    </p>
-                </div>
-                <a class="logo__footer" href="index.html""">
-                    <img src="../img/logo.png" class="logo__img" alt="Коворкинг твоей мечты">
-                </a>
-                <div class="social">
-                    <h4 class="social__title">
-                        Наши социальные сети
-                    </h4>
-                    <ul class="social__list">
-                        <li class="social__icon social__icon--vk">
-                            <a class="social__link" href="//vk.com" target="_blank">Vkontakte</a>
-                        </li>
-                        <li class="social__icon social__icon--fb">
-                            <a class="social__link" href="//facebook.com" target="_blank">Facebook</a>
-                        </li>
-                        <li class="social__icon social__icon--google">
-                            <a class="social__link" href="//plus.google.com/" target="_blank">Google+</a>
-                        </li>
-                        <li class="social__icon social__icon--twitter">
-                            <a class="social__link" href="//twitter.com" target="_blank">Twitter</a>
-                        </li>
-                        <li class="social__icon social__icon--mail">
-                            <a class="social__link" href="mailto:info@coworking.ru">Mail</a>
-                        </li>
-                    </ul>
+            <div class="container">
+                <div class="footer__wrap">
+                    <div class="footer__copyright">
+                        <p> Сделано с любовью и старанием на курсе «HTML + CSS» в
+                            <a class="footer__copyright--link" href="//loftschool.ru" target="_blank">LoftSchool</a>.
+                            <p>Автор работы:
+                                <a class="footer__copyright--author"> Вадим</a>
+                            </p>
+                        </p>
+                    </div>
+                    <a class="logo__footer" href="index.html""">
+                        <img src="../img/logo.png" class="logo__img" alt="Коворкинг твоей мечты">
+                    </a>
+                    <div class="social">
+                        <h4 class="social__title">
+                            Наши социальные сети
+                        </h4>
+                        <ul class="social__list">
+                            <li class="social__icon social__icon--vk">
+                                <a class="social__link" href="//vk.com" target="_blank">Vkontakte</a>
+                            </li>
+                            <li class="social__icon social__icon--fb">
+                                <a class="social__link" href="//facebook.com" target="_blank">Facebook</a>
+                            </li>
+                            <li class="social__icon social__icon--google">
+                                <a class="social__link" href="//plus.google.com/" target="_blank">Google+</a>
+                            </li>
+                            <li class="social__icon social__icon--twitter">
+                                <a class="social__link" href="//twitter.com" target="_blank">Twitter</a>
+                            </li>
+                            <li class="social__icon social__icon--mail">
+                                <a class="social__link" href="mailto:info@coworking.ru">Mail</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </footer>
