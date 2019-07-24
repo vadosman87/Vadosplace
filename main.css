@@ -118,7 +118,6 @@ a {
     flex-grow: 0;
     flex-shrink: 1;
     flex-basis: 180px;
-    margin-left: 20px;
     padding: 0px;
 }
 
@@ -167,7 +166,7 @@ ul > li {
     background: no-repeat center center;
     margin-right: 20px;
     transition: .5s;
-    margin-top: -2px;
+    margin-top: -3px;
 }
 
 .menu__text:hover {
@@ -199,7 +198,6 @@ ul > li {
 } 
 
 main {
-    margin-left: 20px;
     flex: 1;
 }
 
