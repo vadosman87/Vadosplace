@@ -13,24 +13,24 @@
 
 @font-face {
     font-family: 'Gotham Pro';
-    src: url('/fonts/subset-GothamPro-LightItalic.woff2') format('woff2'),
-        url('/fonts/subset-GothamPro-LightItalic.woff') format('woff');
+    src: url('./fonts/subset-GothamPro-LightItalic.woff2') format('woff2'),
+        url('./fonts/subset-GothamPro-LightItalic.woff') format('woff');
     font-weight: 300;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'Gotham Pro';
-    src: url('/../fonts/GothamPro.woff2') format('woff2'),
-        url('/../fonts/GothamPro.woff') format('woff');
+    src: url('./fonts/GothamPro.woff2') format('woff2'),
+        url('./fonts/GothamPro.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Gotham Pro';
-    src: url('/fonts/subset-GothamPro-Light.woff2') format('woff2'),
-        url('/fonts/subset-GothamPro-Light.woff') format('woff');
+    src: url('./fonts/subset-GothamPro-Light.woff2') format('woff2'),
+        url('./fonts/subset-GothamPro-Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
 }
