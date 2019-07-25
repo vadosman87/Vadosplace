@@ -173,8 +173,7 @@ ul > li {
 }
 
 .menu__text--icon--main::before {
-    background-image: url('./img/main_icon1.png')
-     no-repeat center center;
+    background-image: url('./img/main_icon1.png');
 }
 
 .menu__text--icon--rewiew::before {
