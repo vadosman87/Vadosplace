@@ -185,11 +185,11 @@ ul > li {
 }
 
 .menu__text--icon--prices::before {
-    background-image: url('./img/wallet.png')
+    background-image: url('./img/wallet.png');
 }
 
 .menu__text--icon--prices:hover::before {
-    background-image: url('./img/wallet_icon1.png')
+    background-image: url('./img/wallet_icon1.png');
 }
 
 .menu__text--active {
