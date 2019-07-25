@@ -5,32 +5,32 @@
 
 @font-face {
     font-family: 'Gotham Pro';
-    src: url('./fonts/GothamPro-Bold.woff2') format('woff2'),
-         url('./fonts/GothamPro-Bold.woff') format('woff');
+    src: url('/fonts/GothamPro-Bold.woff2') format('woff2'),
+         url('/fonts/GothamPro-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Gotham Pro';
-    src: url('./fonts/subset-GothamPro-LightItalic.woff2') format('woff2'),
-        url('./fonts/subset-GothamPro-LightItalic.woff') format('woff');
+    src: url('/fonts/subset-GothamPro-LightItalic.woff2') format('woff2'),
+        url('/fonts/subset-GothamPro-LightItalic.woff') format('woff');
     font-weight: 300;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'Gotham Pro';
-    src: url('./fonts/GothamPro.woff2') format('woff2'),
-        url('./fonts/GothamPro.woff') format('woff');
+    src: url('/fonts/GothamPro.woff2') format('woff2'),
+        url('/fonts/GothamPro.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Gotham Pro';
-    src: url('./fonts/subset-GothamPro-Light.woff2') format('woff2'),
-        url('./fonts/subset-GothamPro-Light.woff') format('woff');
+    src: url('/fonts/subset-GothamPro-Light.woff2') format('woff2'),
+        url('/fonts/subset-GothamPro-Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
 }
@@ -38,7 +38,7 @@
 
 body {
     margin: 0;
-    font-family: 'Roboto', 'Gotham Pro', sans-serif;
+    font-family: 'Roboto', 'Gotham Pro', 'Open Sans' sans-serif;
 }
 
 a {
@@ -49,13 +49,17 @@ a {
     background-color: transparent;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 .wrapper {
     min-width: 1100px;
     min-height: 100%;
 }
 .header {
     background:  #27273e;
-    height: 77px;
     margin: 0 auto;
 }
 
@@ -70,18 +74,14 @@ a {
 
 
 .logo {
-    position: relative;
-    top: 13px;
-    left: 20px;
-    margin: 0;
+    margin-top: 13px;
 }
 
 .contacts {
+    text-align: end;
     display: flex;
     flex-direction: column;
-    text-align: right;
-    position: relative;
-    top: 22px;
+    align-self: center;
 }
 
 .contacts__phone {
@@ -99,13 +99,16 @@ a {
 
 .contacts__time {
     color: #ec1e79;
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     opacity: 70%;
     text-decoration: underline;
     line-height: 20px;
 }
 
+.contacts__time:hover {
+    color: blueviolet;
+}
 .about {
     height: 359px;
     background: #27273e;
@@ -135,11 +138,6 @@ ul > li {
     background: #fff;
 }
 
-.menu__list {
-    display: flex;
-    align-items:left;
-    flex-direction: column;    
-}
 
 .menu__item {
    margin-bottom: 29px;
@@ -166,7 +164,8 @@ ul > li {
     background: no-repeat center center;
     margin-right: 20px;
     transition: .5s;
-    margin-top: -3px;
+    margin-bottom: 3px;
+
 }
 
 .menu__text:hover {
@@ -174,23 +173,23 @@ ul > li {
 }
 
 .menu__text--icon--main::before {
-    background-image: url('./img/main_icon1.png');
+    background-image: url('/img/main_icon1.png');
 }
 
 .menu__text--icon--rewiew::before {
-    background-image: url('./img/feed.png');
+    background-image: url('/img/feed.png');
 }
 
 .menu__text--icon--rewiew:hover::before {
-    background-image: url('./img/feed_icon1.png');
+    background-image: url('/img/feed_icon1.png');
 }
 
 .menu__text--icon--prices::before {
-    background-image: url('./img/wallet.png')
+    background-image: url('/img/wallet.png')
 }
 
 .menu__text--icon--prices:hover::before {
-    background-image: url('./img/wallet_icon1.png')
+    background-image: url('/img/wallet_icon1.png')
 }
 
 .menu__text--active {
@@ -202,8 +201,12 @@ main {
 }
 
 .content {
-    margin-bottom: 72px;
     font-family: 'Gotham Pro', sans-serif;
+    font-style: normal;
+}
+
+section {
+    margin-bottom: 72px;
 }
 
 .title {
@@ -213,26 +216,25 @@ main {
     line-height: 37px;
     font-weight: bold;
 }
-.content__box--wrap {
-    display: flex;
-}
 
-.content__box {
+.content__wrap {
     display: flex;
-    flex-direction: column;
+    
+}
+.content__box {
+    text-align: center;
     flex: 0 1 250px;
     margin-right: 20px;
-    text-align: center;
 }
 
-.content__title {
+h2 {
     text-transform: uppercase;
     color: #221f1f;
-     font-size: 11px;
-     letter-spacing: 2.5px;
-     margin: 0px auto 17px;
-     font-weight: bold;
-     text-align: center;
+    font-size: 11px;
+    letter-spacing: 2.5px;
+    margin: 0px auto 17px;
+    font-weight: bold;
+    text-align: center;
 } 
 
 .content__paragraph {
@@ -240,21 +242,21 @@ main {
     line-height: 30px;
 }
 
-.content__list {
-    padding: 0;
-    margin: 0 auto;
+.content__text {
+    font-size: 18px;
+    line-height: 30px;
 }
 
-.content__item {
+.content__option {
     text-align: left;
-    margin-left: 10px;
     font-family: 'Gotham Pro' sans-serif;
     font-weight: normal;
     font-style: normal;
+    padding: 5px 0 0;
 
 }
 
-.content__item::before {
+.content__option::before {
     content: "\2022";
     color: #ec1e79;
     margin: 0 26px;
@@ -264,42 +266,39 @@ main {
     margin: 0 auto 30px;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-}
-
 .news {
     font-family: 'Roboto', 'Gotham Pro', sans-serif;
     margin-bottom: 64px;
 }
 
-.news .title {
+.title {
     font-family: 'Gotham Pro', sans-serif;
     font-weight: bold;
+    margin-bottom: 64px;
 }
 
-.news__item {
+.news__wrap {
     display: flex;
     margin-bottom: 24px;
-
 }
 
 .news__img {
     flex: 0 1 160px;
-    margin-left: -5px;
 }
 
 .news__img img {
     border-radius: 50%;
+    margin-left: -5px
 }
 
-.news__desc {
+.news__content {
     flex: 1;
+    font-family: Roboto, "Arial Narrow", sans-serif;
     margin-left: 20px;
     line-height: 21px;
-    font-weight: 300;
+    font-weight: 300; 
 }
+
 .news__date {
     color: #656464;
     font-size: 14px;
@@ -352,7 +351,7 @@ p {
 .pagination__control {
     width: 6px;
     height: 10px;
-    background-image: url('./img/arrow.png');
+    background-image: url('/img/arrow.png');
     background-repeat: no-repeat;
 }
 
@@ -444,19 +443,6 @@ p {
     font-weight: bold;
 }
 
-.logo_img {
-    margin-left: -99px
-}
-
-.logo_footer {
-    display: flex;
-    justify-content: center;
-    flex: 1;
-}
-
-.logo__footer {
-    margin-left: -99px;
-}
 
 .social {
     display: flex;
@@ -485,7 +471,7 @@ p {
     height: 20px;
     width: 20px;
     display: block;
-    background: #d4d4d8 url('./img/soc-sprite.png') 0 0 no-repeat;
+    background: #d4d4d8 url('../img/soc-sprite.png') 0 0 no-repeat;
     border-radius: 50%;
     transition: .5s;
 }
