@@ -5,32 +5,32 @@
 
 @font-face {
     font-family: 'Gotham Pro';
-    src: url('/fonts/GothamPro-Bold.woff2') format('woff2'),
-         url('/fonts/GothamPro-Bold.woff') format('woff');
+    src: url('./fonts/GothamPro-Bold.woff2') format('woff2'),
+         url('./fonts/GothamPro-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Gotham Pro';
-    src: url('/fonts/subset-GothamPro-LightItalic.woff2') format('woff2'),
-        url('/fonts/subset-GothamPro-LightItalic.woff') format('woff');
+    src: url('./fonts/subset-GothamPro-LightItalic.woff2') format('woff2'),
+        url('./fonts/subset-GothamPro-LightItalic.woff') format('woff');
     font-weight: 300;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'Gotham Pro';
-    src: url('/fonts/GothamPro.woff2') format('woff2'),
-        url('/fonts/GothamPro.woff') format('woff');
+    src: url('./fonts/GothamPro.woff2') format('woff2'),
+        url('./fonts/GothamPro.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Gotham Pro';
-    src: url('/fonts/subset-GothamPro-Light.woff2') format('woff2'),
-        url('/fonts/subset-GothamPro-Light.woff') format('woff');
+    src: url('./fonts/subset-GothamPro-Light.woff2') format('woff2'),
+        url('./fonts/subset-GothamPro-Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
 }
@@ -173,23 +173,23 @@ ul > li {
 }
 
 .menu__text--icon--main::before {
-    background-image: url('/img/main_icon1.png');
+    background-image: url('./img/main_icon1.png');
 }
 
 .menu__text--icon--rewiew::before {
-    background-image: url('/img/feed.png');
+    background-image: url('./img/feed.png');
 }
 
 .menu__text--icon--rewiew:hover::before {
-    background-image: url('/img/feed_icon1.png');
+    background-image: url('./img/feed_icon1.png');
 }
 
 .menu__text--icon--prices::before {
-    background-image: url('/img/wallet.png')
+    background-image: url('./img/wallet.png')
 }
 
 .menu__text--icon--prices:hover::before {
-    background-image: url('/img/wallet_icon1.png')
+    background-image: url('./img/wallet_icon1.png')
 }
 
 .menu__text--active {
@@ -293,7 +293,7 @@ h2 {
 
 .news__content {
     flex: 1;
-    font-family: Roboto, "Arial Narrow", sans-serif;
+    font-family: 'Roboto', "Arial Narrow", sans-serif;
     margin-left: 20px;
     line-height: 21px;
     font-weight: 300; 
@@ -351,7 +351,7 @@ p {
 .pagination__control {
     width: 6px;
     height: 10px;
-    background-image: url('/img/arrow.png');
+    background-image: url('./img/arrow.png');
     background-repeat: no-repeat;
 }
 
@@ -471,7 +471,7 @@ p {
     height: 20px;
     width: 20px;
     display: block;
-    background: #d4d4d8 url('../img/soc-sprite.png') 0 0 no-repeat;
+    background: #d4d4d8 url('./img/soc-sprite.png') 0 0 no-repeat;
     border-radius: 50%;
     transition: .5s;
 }
