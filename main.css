@@ -746,3 +746,23 @@ input {
 .form__button:hover {
     background: #ec1e79;
 }
+
+.breadcrumbs {
+    font-style: italic;
+    font-size: 14px;
+    opacity: 0.8;
+    margin-top: 45px;
+}
+
+.breadcrumbs__list {
+    display: flex;
+}
+.breadcrumbs__link {
+    text-decoration: underline;
+    color: #ec1e79;
+}
+
+.breadcrumbs__item--after::after {
+    content: "/";
+    margin-right: 3px;
+}
