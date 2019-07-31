@@ -220,6 +220,7 @@ main {
 
 .content {
     font-family: 'Gotham Pro', sans-serif;
+    padding-bottom: 60px;
 }
 
 .title {
@@ -538,6 +539,7 @@ h4 {
 }
 .review {
     margin-bottom: 64px;
+    font-family: 'Gotham Pro', sans-serif;
 }
 
 .review__box {
