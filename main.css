@@ -175,27 +175,27 @@ ul > li {
 }
 
 .menu__text--icon-main::before {
-    background-image: url('/img/main.png');
+    background-image: url('./img/main.png');
 }
 
 .menu__text--icon-main:hover::before {
-    background-image: url('img/main_icon1.png')
+    background-image: url('./img/main_icon1.png')
 }
 
 .menu__text--icon-rewiew::before {
-    background-image: url('/img/feed.png');
+    background-image: url('./img/feed.png');
 }
 
 .menu__text--icon-rewiew:hover::before {
-    background-image: url('/img/feed_icon1.png');
+    background-image: url('./img/feed_icon1.png');
 }
 
 .menu__text--icon-prices::before {
-    background-image: url('/img/wallet.png');
+    background-image: url('./img/wallet.png');
 }
 
 .menu__text--icon-prices:hover::before {
-    background-image: url('/img/wallet_icon1.png');
+    background-image: url('./img/wallet_icon1.png');
 }
 
 .menu__text--active {
@@ -203,15 +203,15 @@ ul > li {
 } 
 
 .menu__text--active.menu__text--icon-rewiew::before {
-    background: url('/img/feed_icon1.png');
+    background: url('./img/feed_icon1.png');
 }
 
 .menu__text--active.menu__text--icon-main::before {
-    background: url('/img/main_icon1.png') no-repeat center center;
+    background: url('./img/main_icon1.png') no-repeat center center;
 }
 
 .menu__text--active.menu__text--icon-prices::before {
-    background: url('/img/wallet_icon1.png') no-repeat center center;
+    background: url('./img/wallet_icon1.png') no-repeat center center;
 }
 
 main {
@@ -288,15 +288,15 @@ main {
 }
 
 .content__icon--flower {
-    background-image: url('/img/flower.png');
+    background-image: url('./img/flower.png');
 }
 
 .content__icon--star {
-    background-image: url('/img/mark-as-favorite-star.png');
+    background-image: url('./img/mark-as-favorite-star.png');
 }
 
 .content__icon--paint {
-    background-image: url('/img/painter-palette.png');
+    background-image: url('./img/painter-palette.png');
 }
 
 .news {
@@ -388,7 +388,7 @@ p {
 .pagination__control {
     width: 6px;
     height: 10px;
-    background-image: url('/img/arrow.png');
+    background-image: url('./img/arrow.png');
     background-repeat: no-repeat;
 }
 
@@ -503,7 +503,7 @@ a.logo--footer {
     margin-top: 7px;
     height: 20px;
     width: 20px;
-    background: #d4d4d8 url('../img/soc-sprite.png') 0 0 no-repeat;
+    background: #d4d4d8 url('./img/soc-sprite.png') 0 0 no-repeat;
     border-radius: 50%;
     transition: .5s;
     margin-top: 10px;
@@ -555,7 +555,7 @@ h4 {
     overflow: hidden;
     margin-top: 5px;
     background-color: #f5f5f5;
-    background-image: url('/img/logo-fig.png');
+    background-image: url('./img/logo-fig.png');
 }
 
 .review__content {
@@ -597,7 +597,7 @@ input {
 }
 
 .line__content {
-    background: url('/img/line1.png') center no-repeat;
+    background: url('./img/line1.png') center no-repeat;
 }
 
 .line__text {
